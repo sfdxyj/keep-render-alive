@@ -2,7 +2,7 @@ name: Keep Render Alive
 
 on:
   schedule:
-    - cron: "20 1 * * *"  # 每天 01:20 UTC，即北京时间 9:20
+    - cron: "*/5 * * * *"  # 每 5 分钟触发一次
   workflow_dispatch:         # 支持手动触发
 
 jobs:
